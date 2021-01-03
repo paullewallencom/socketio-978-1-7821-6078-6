@@ -1,0 +1,15 @@
+extends layout
+
+block append head
+  script(type='text/javascript', src='/socket.io/socket.io.js')
+  script(type='text/javascript', src='/javascripts/rooms.js')
+
+block content
+  section#chatrooms
+    div#new_room
+      span Start a new Room
+      input#new_room_name(type="text")
+      input#new_room_btn(type="button", value="Start")
+    div#allrooms
+      div#header Or join a room
+      div#rooms_list

@@ -1,0 +1,12 @@
+extends layout
+
+block append head
+  script(type='text/javascript', src='/javascripts/landing.js')
+
+block content
+  section#welcome
+    div Welcome
+    span
+      input#nickname(type="text", placeholder="Enter a nickname")
+      a#startchat(class="btn") Login
+
